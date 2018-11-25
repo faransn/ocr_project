@@ -31,12 +31,13 @@ def create_dic(double_letters_list):
 
 
 def set_value_list(split_words, all_keys):
-    list_of_word = [0]*len(all_keys)
+
+    list_of_word = [0] * len(all_keys)
     for i in range(len(split_words)):
         for j in range(len(all_keys)):
             if split_words[i].encode('utf-8') == all_keys[j]:
                 list_of_word[j] = 1
-            #    print all_keys[j], j
+                print all_keys[j], j
     print list_of_word
     return list_of_word
 

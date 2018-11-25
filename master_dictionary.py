@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 import json
+import os
+import numpy as np
+import sys
 
 
 # set dictionary as key, set word as value
@@ -19,3 +22,17 @@ def append_to_json(dict_, path):
             f.write(',')  # Write the separator
             json.dump(dict_, f, ensure_ascii=False)  # Dump the dictionary
             f.write(']')
+
+
+def load_from_json():
+    np.set_printoptions(threshold=sys.maxint)
+#    test_data_file = os.path.join(file)
+    test_data = json.load(open("test.json"), encoding="utf8")
+    print type(test_data[0])
+
+    with open('test.json') as fh:
+        data = json.load(fh)
+    print(type(data[0]))
+
+
+load_from_json()

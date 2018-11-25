@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from load_file import load_file
 from detect_word import detect_word
+import re
 
 
 # 1. spaces will be clear
@@ -18,6 +19,7 @@ def omit_excess():
     words = [x.strip("((") for x in words]
     words = [x.strip("))") for x in words]
     words = [x.strip("*") for x in words]
+    words = [x.replace('  ', "") for x in words]
     words = [x.replace('\n', "") for x in words]
     words = [x.replace('"', "") for x in words]
     words = [x.replace(':', "") for x in words]

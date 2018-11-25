@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 import config
 from filter import omit_excess, sort_words, omit_repeated_word
+from master_dictionary import append_to_json, create_master_dic
+from word_hashing import set_value_list, split, create_key_list
 from create_image import create_angle_image, create_image
 import time
 
@@ -11,10 +13,10 @@ start_time = time.time()
 
 for i in range(len(words)):
     if len(words[i]) > 1 and words[i].isdigit() is False:
-        # create_image(words[i], "tahoma.ttf", config.main_tahoma_folder + "/" + config.zero_folder)
-        # create_image(words[i], "arial.ttf", config.main_arial_folder + "/" + config.zero_folder)
-        create_angle_image(words[i], "tahoma.ttf", 2, config.main_tahoma_folder + "/" + config.two_folder)
-        create_angle_image(words[i], "arial.ttf", 2, config.main_arial_folder + "/" + config.two_folder)
+        create_image(words[i], "tahoma.ttf", config.main_tahoma_folder + "/" + config.zero_folder)
+        #create_image(words[i], "arial.ttf", config.main_arial_folder + "/" + config.zero_folder)
+        #create_angle_image(words[i], "tahoma.ttf", 2, config.main_tahoma_folder + "/" + config.two_folder)
+        #create_angle_image(words[i], "arial.ttf", 2, config.main_arial_folder + "/" + config.two_folder)
         #        create_image(words[i], "tahoma.ttf", 4, config.main_tahoma_folder + "/" + config.four_folder)
         #        create_image(words[i], "arial.ttf", 4, config.main_arial_folder + "/" + config.four_folder)
         #        create_image(words[i], "tahoma.ttf", 6, config.main_tahoma_folder + "/" + config.six_folder)
@@ -24,9 +26,9 @@ for i in range(len(words)):
         #        create_image(words[i], "tahoma.ttf", 10, config.main_tahoma_folder + "/" + config.ten_folder)
         #        create_image(words[i], "arial.ttf", 10, config.main_arial_folder + "/" + config.ten_folder)
 
-    #    append_to_json(create_master_dic(
-    #       set_value_list(split(words[i]), create_key_list(config.list1, config.list2)),
-    #       words[i]), "test.json")
+
+        #append_to_json(create_master_dic(
+         #  set_value_list(split(words[i]), create_key_list()), words[i]), "test.json")
 
 elapsed_time = time.time() - start_time
 print elapsed_time
