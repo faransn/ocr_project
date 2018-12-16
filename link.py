@@ -13,18 +13,7 @@ start_time = time.time()
 
 for i in range(len(words)):
     if len(words[i]) > 1 and words[i].isdigit() is False:
-        create_image(words[i], "tahoma.ttf", config.main_tahoma_folder + "/" + config.zero_folder)
-        #create_image(words[i], "arial.ttf", config.main_arial_folder + "/" + config.zero_folder)
-        #create_angle_image(words[i], "tahoma.ttf", 2, config.main_tahoma_folder + "/" + config.two_folder)
-        #create_angle_image(words[i], "arial.ttf", 2, config.main_arial_folder + "/" + config.two_folder)
-        #        create_image(words[i], "tahoma.ttf", 4, config.main_tahoma_folder + "/" + config.four_folder)
-        #        create_image(words[i], "arial.ttf", 4, config.main_arial_folder + "/" + config.four_folder)
-        #        create_image(words[i], "tahoma.ttf", 6, config.main_tahoma_folder + "/" + config.six_folder)
-        #        create_image(words[i], "arial.ttf", 6, config.main_arial_folder + "/" + config.six_folder)
-        #        create_image(words[i], "tahoma.ttf", 8, config.main_tahoma_folder + "/" + config.eight_folder)
-        #        create_image(words[i], "arial.ttf", 8, config.main_arial_folder + "/" + config.eight_folder)
-        #        create_image(words[i], "tahoma.ttf", 10, config.main_tahoma_folder + "/" + config.ten_folder)
-        #        create_image(words[i], "arial.ttf", 10, config.main_arial_folder + "/" + config.ten_folder)
+        create_image(words[i], "arial.ttf", config.main_arial_folder + "/" + config.zero_folder)
 
 
         #append_to_json(create_master_dic(

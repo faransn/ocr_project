@@ -37,8 +37,8 @@ def set_value_list(split_words, all_keys):
         for j in range(len(all_keys)):
             if split_words[i].encode('utf-8') == all_keys[j]:
                 list_of_word[j] = 1
-                print all_keys[j], j
-    print list_of_word
+#                print all_keys[j], j
+#    print list_of_word
     return list_of_word
 
 

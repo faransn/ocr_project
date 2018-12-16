@@ -30,12 +30,16 @@ def distribution(path, labels):
     x_test = []
     y_train = []
     y_test = []
-
     for i in range(len(labels)):
         image_by_label = division(path, labels[i])
         list_by_label = set_value_list(split(labels[i]), create_key_list())
         divided_image.append(image_by_label)
         labels_lists.append(list_by_label)
+
+    for i in range(len(labels)):
+
+        print "image", len(divided_image)
+        print "labels", len(labels_lists)
 
         rand = np.random.uniform(0, 1)
         if rand > 0.2:
