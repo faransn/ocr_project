@@ -13,7 +13,10 @@ start_time = time.time()
 
 for i in range(len(words)):
     if len(words[i]) > 1 and words[i].isdigit() is False:
-        create_image(words[i], "arial.ttf", config.main_arial_folder + "/" + config.zero_folder)
+    #    create_image(words[i], "arial.ttf", config.main_arial_folder + "/" + config.zero_folder)
+        create_angle_image(words[i], "arial.ttf", 0, config.main_arial_folder + "/" + config.zero_folder)
+      #  create_image(words[i], "tahoma.ttf", config.main_tahoma_folder + "/" + config.zero_folder)
+
 
 
         #append_to_json(create_master_dic(

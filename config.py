@@ -12,9 +12,7 @@ list2 = (
 img_width = 280
 img_height = 70
 
-word_file_name = "test1.docx"
-three_k_file = "3k.docx"
-ten_k_file = "10k.docx"
+
 twenty_three_k_file = "23k.docx"
 
 
@@ -27,11 +25,10 @@ main_sp_noise_folder = "sp_noise/"
 
 
 zero_folder = "0/"
+one_folder = "1/"
 two_folder = "2/"
-four_folder = "4/"
-six_folder = "6/"
-eight_folder = "8/"
-ten_folder = "10/"
+minus_one_folder = "-1/"
+
 
 image_format = ".jpg"
 

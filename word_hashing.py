@@ -21,7 +21,18 @@ def create_key_list():
     for i in range(len(l1)):
         for j in range(len(l2)):
             letters_list.append(concat_str(l1[i], l2[j]))
+    # print letters_list[3]
     return letters_list
+
+
+def get_double_word_by_index(index):
+    l1 = config.list1
+    l2 = config.list2
+    letters_list = []
+    for i in range(len(l1)):
+        for j in range(len(l2)):
+            letters_list.append(concat_str(l1[i], l2[j]))
+    return letters_list[index]
 
 
 # Will create dictionary, keys comes from def create_key_list and all values are 0

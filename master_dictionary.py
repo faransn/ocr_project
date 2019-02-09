@@ -35,4 +35,4 @@ def load_from_json():
     print(type(data[0]))
 
 
-load_from_json()
+#load_from_json()
